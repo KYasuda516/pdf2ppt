@@ -14,7 +14,7 @@ Anaconda Prompt を起動してください。
 このリポジトリをクローンしたディレクトリに移動したあと、以下のコマンドを実行してください。（ `pdf2ppt-env` というconda環境が作成されます）
 
 ```bash
-conda env create -f ./scripts/environment.yml
+conda env create -f ./.scripts/environment.yml
 ```
 
 # 実行方法
