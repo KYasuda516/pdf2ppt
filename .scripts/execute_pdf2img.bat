@@ -2,6 +2,6 @@
 @REM This software is released under the MIT License, see LICENSE.
 
 @echo off
-%~dp0\activate_env.bat && ^
+call %~dp0\activate_env.bat && ^
 python %~dp0\pdf2img.py %1 %2 && ^
 conda deactivate
