@@ -1,0 +1,8 @@
+name: pdf2ppt-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9.16
+  - conda-forge:pdf2image=1.16.3
+  - conda-forge:poppler=22.12.0
