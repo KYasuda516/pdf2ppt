@@ -1,6 +1,9 @@
 @echo off
-call %~dp0\..\.scripts\yes_no_input.bat 本当にアンインストールしますか
-if %errorlevel%==1 (
-  %~dp0\..\.scripts\activate_env.bat ^
-  && conda remove -n pdf2ppt-env --all
-)
+call %~dp0\..\.scripts\yes_no_input.bat 譛ｬ蠖薙↓繧｢繝ｳ繧､繝ｳ繧ｹ繝医�ｼ繝ｫ縺励∪縺吶°
+(
+  if %errorlevel%==1 (
+    call %~dp0\..\.scripts\activate_env.bat 0 ^
+    && activate base ^
+    && conda remove -n pdf2ppt-env --all
+  )
+) && call %~dp0\..\.scripts\display_finish.bat
