@@ -1,3 +1,6 @@
+@REM Copyright (c) 2023 Kanta Yasuda (GitHub: @kyasuda516)
+@REM This software is released under the MIT License, see LICENSE.
+
 @echo off
 call %~dp0\..\.scripts\yes_no_input.bat インストールを開始しますか
 (
