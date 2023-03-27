@@ -7,7 +7,7 @@ PDFをPowerPointプレゼンテーションに変換します。
 また、実行環境として **Anaconda** を用います。
 
 # インストール
-右上のCodeボタンからZIPファイルをダウンロードして解凍するなどして、このリポジトリをローカル環境に複製してください。
+右上の Code ボタンからZIPファイルをダウンロードして解凍するなどして、このリポジトリをローカル環境に複製してください。
 
 また、あらかじめ [Anaconda をインストール](https://www.anaconda.com/products/distribution#:~:text=Anaconda%20Installers,Windows "Anaconda | Anaconda Distribution")しておいてください。
 
