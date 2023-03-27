@@ -11,7 +11,7 @@ PDFをPowerPointプレゼンテーションに変換します。
 
 また、あらかじめ [Anaconda をインストール](https://www.anaconda.com/products/distribution#:~:text=Anaconda%20Installers,Windows "Anaconda | Anaconda Distribution")しておいてください。
 
-そのうえで、`/setup/Install.bat` を実行してください。`pdf2ppt-env` というconda環境が構築されると同時に、ライブラリがインストールされます。
+そのうえで、`/setup/Install.bat` をローカル環境上で実行してください。`pdf2ppt-env` というconda環境が構築されると同時に、ライブラリがインストールされます。
 
 # 実行方法
 `/Main.pptm` を開き、そこに書かれている通りに進めてください。
