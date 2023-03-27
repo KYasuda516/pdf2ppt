@@ -2,8 +2,7 @@
 @REM This software is released under the MIT License, see LICENSE.
 
 @echo off
-@REM 第1引数はbaseとconda環境のどちらを開くかを意味する。
-@REM 0ならbaseを開き、1ならconda環境を開く。
+@REM %1==0 -> base, %1==1 -> conda env
 if %1==0 (
   call %userprofile%\anaconda3\Scripts\activate.bat
 ) 

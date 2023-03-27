@@ -2,7 +2,7 @@
 @REM This software is released under the MIT License, see LICENSE.
 
 @echo off
-call %~dp0\..\.scripts\yes_no_input.bat インストールを開始しますか
+call %~dp0\..\.scripts\yes_no_input.bat May I begin installation
 (
   if %errorlevel%==1 (
     call %~dp0\..\.scripts\activate_env.bat 0 ^
