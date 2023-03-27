@@ -2,7 +2,7 @@
 @REM This software is released under the MIT License, see LICENSE.
 
 @echo off
-call %~dp0\..\.scripts\yes_no_input.bat Are you sure want to UNINSTALL
+call %~dp0\..\.scripts\yes_no_input.bat Are you sure you want to UNINSTALL
 (
   if %errorlevel%==1 (
     call %~dp0\..\.scripts\activate_env.bat 0 ^
