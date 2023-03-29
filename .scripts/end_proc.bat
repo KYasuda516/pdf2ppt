@@ -2,5 +2,6 @@
 @REM This software is released under the MIT License, see LICENSE.
 
 @echo off
+echo.
 echo Process has completed.
 pause

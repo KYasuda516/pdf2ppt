@@ -2,11 +2,11 @@
 @REM This software is released under the MIT License, see LICENSE.
 
 @echo off
-call %~dp0\..\.scripts\yes_no_input.bat Are you sure you want to UNINSTALL
+cd %~dp0\..
+call .scripts\init_proc.bat Are you sure you want to UNINSTALL
 (
   if %errorlevel%==1 (
-    call %~dp0\..\.scripts\activate_env.bat 0 ^
-    && activate base ^
-    && conda remove -n pdf2ppt-env --all
+    conda remove -n %_conda_env_name% --all
   )
-) && call %~dp0\..\.scripts\display_finish.bat
+  call .scripts\end_proc.bat
+)

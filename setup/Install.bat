@@ -2,10 +2,13 @@
 @REM This software is released under the MIT License, see LICENSE.
 
 @echo off
-call %~dp0\..\.scripts\yes_no_input.bat Are you ready to begin the installation
+cd %~dp0\..
+call .scripts\init_proc.bat Are you ready to begin the installation
 (
   if %errorlevel%==1 (
-    call %~dp0\..\.scripts\activate_env.bat 0 ^
-    && conda env create -f %~dp0\..\.scripts\environment.yml
+    conda env create -f .scripts\environment.yml
+    activate %_conda_env_name%
+    echo y | conda update --all
   )
-) && call %~dp0\..\.scripts\display_finish.bat
+  call .scripts\end_proc.bat
+)
