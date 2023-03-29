@@ -3,7 +3,8 @@
 
 @echo off
 cd %~dp0\..
-call .scripts\init_proc.bat Are you sure you want to UNINSTALL
+call .scripts\activate.bat ^
+&& call .scripts\yes_no_input.bat Are you sure you want to UNINSTALL
 (
   if %errorlevel%==1 (
     conda remove -n %_conda_env_name% --all

@@ -3,10 +3,11 @@
 
 @echo off
 cd %~dp0\..
-call .scripts\init_proc.bat Would you like to refresh the libraries
+call .scripts\activate.bat ^
+&& call .scripts\yes_no_input.bat Would you like to refresh the libraries
 (
   if %errorlevel%==1 (
-    activate %_conda_env_name% 
+    activate %_conda_env_name%
     conda update --all
   )
   call .scripts\end_proc.bat

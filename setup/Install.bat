@@ -3,7 +3,8 @@
 
 @echo off
 cd %~dp0\..
-call .scripts\init_proc.bat Are you ready to begin the installation
+call .scripts\activate.bat ^
+&& call .scripts\yes_no_input.bat Are you ready to begin the installation
 (
   if %errorlevel%==1 (
     conda env create -f .scripts\environment.yml
