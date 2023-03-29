@@ -3,7 +3,7 @@
 
 @echo off
 cd %~dp0\..
-call .scripts\activate.bat ^
-&& activate %_conda_env_name% ^
-&& python .scripts\pdf2img.py %1 %2 ^
-&& conda deactivate
+call .scripts\activate.bat
+activate %_conda_env_name% && ^
+python .scripts\pdf2img.py %1 %2 && ^
+conda deactivate && conda deactivate
